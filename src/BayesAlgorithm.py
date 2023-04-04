@@ -19,10 +19,6 @@ def bayes():
     # B = the time of day and the week (how busy % wise AKA MOCK_DATA)
     index = 0
     for key, value in MOCK_DATA.items():
-        # for each hour (value) of the day (key) 
-        # if value > 80% then gym goer NOT go to gym
-            # if 50% < value < 80% then flip a coin if they go
-            # if value <=- 50% they go
         for capacityPercentage in value:
             for hourPercentage in capacityPercentage:
                 if hourPercentage > 80:
@@ -32,5 +28,3 @@ def bayes():
                 else: # hourPercentage < 50%
                     WentOrNot[index].append(True)
         index += 1
-    for list in WentOrNot:
-        print(list)
