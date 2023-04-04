@@ -1,3 +1,7 @@
+[[toc]]
+<!--table of contents-->
+{:toc}
+
 # CS5060 Final Project (Implementation)
 
 ## Algorithm 1 - Optimal Stopping
