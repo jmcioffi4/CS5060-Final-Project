@@ -1,4 +1,5 @@
 import sys
+from BayesAlgorithm import bayes
 
 try:
     while(True): # keep running till user exits
@@ -14,7 +15,7 @@ try:
             if userInput == 1:
                 print("Optimal Stopping")
             elif userInput == 2:
-                print("Bayes Theorem")
+                bayes()
             elif userInput == 3:
                 print("Scheduling")
             else:

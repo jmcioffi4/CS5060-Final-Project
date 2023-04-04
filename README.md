@@ -15,6 +15,8 @@
     *   What is the probability of gym attendance given
         *   The time of day
         *   The day of the week
+    *   Assume the following
+        *   if the gym is more than 50% busy then a gym goer will not go to the gym
 *   This data can be easily pulled from google map's data
     *   Collecting the data on local gyms in the area and using it in Bayes Theorem would satisfy the requirements of this algorithm and problem in this project.
 
