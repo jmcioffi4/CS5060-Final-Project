@@ -1,11 +1,27 @@
 import sys
 
-if __name__ == '__main__':
-    print("This is the main file of our project.")
-    while(true): # keep running till user exits
-        userInput = input("**MENU**\n"
-            "1) Optimal Stopping [type OS]"
-            "2) Bayes Theorem [type BT]"
-            "3) Scheduling [type S]"
-            "4) Exit [type X or use CTRL+C]")
-        break
+try:
+    while(True): # keep running till user exits
+        print('---------------------------')
+        userInput = input("**MENU**\n\n"
+            "1 = Optimal Stopping\n\n"
+            "2 = Bayes Theorem\n\n"
+            "3 = Scheduling\n\n"
+            "CTRL+C = Exit \n\n")
+
+        if userInput.isdigit():
+            userInput = int(userInput)
+            if userInput == 1:
+                print("Optimal Stopping")
+            elif userInput == 2:
+                print("Bayes Theorem")
+            elif userInput == 3:
+                print("Scheduling")
+            else:
+                print("Invalid input.\nTry Again.")
+        else:
+            print("Invalid input.\nTry Again.")
+        
+except KeyboardInterrupt:
+    print("Pressed ^C. Exiting.\n\n")
+    sys.exit(0) 

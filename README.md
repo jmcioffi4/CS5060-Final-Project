@@ -7,12 +7,16 @@
 *   The Theorem
     *   `P(A|B) = P(B|A) * P(A) / P(B)`
     *   Where:
-        *   P(A|B) is the conditional probability of A given B
-        *   P(B|A) is the conditional probability of B given A
-        *   P(A) is the prior probability of A
-        *   P(B) is the prior probability of B
-* The problem the algorithm will solve:
-    * 
+        *   `P(A|B)` is the conditional probability of `A` given `B`
+        *   `P(B|A)` is the conditional probability of `B` given `A`
+        *   `P(A)` is the prior probability of `A`
+        *   `P(B)` is the prior probability of `B`
+*   The problem the algorithm will solve:
+    *   What is the probability of gym attendance given
+        *   The time of day
+        *   The day of the week
+*   This data can be easily pulled from google map's data
+    *   Collecting the data on local gyms in the area and using it in Bayes Theorem would satisfy the requirements of this algorithm and problem in this project.
 
 ## Algorithm 3 - Scheduling
 *   TODO : [FILL IN WHEN COMPLETING] 
