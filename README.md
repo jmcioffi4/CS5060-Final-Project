@@ -12,9 +12,8 @@
         *   `P(A)` is the prior probability of `A`
         *   `P(B)` is the prior probability of `B`
 *   The problem the algorithm will solve:
-    *   What is the probability of gym attendance given
-        *   The time of day
-        *   The day of the week
+    *   What is the probability of gym attendance (A) given
+        *   The time of day & the day of the week (B)
     *   Assume the following
         *   if the gym is more than 50% busy then a gym goer will not go to the gym
 *   This data can be easily pulled from google map's data
