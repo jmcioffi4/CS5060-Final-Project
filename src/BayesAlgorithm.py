@@ -1,4 +1,5 @@
 # ALL DATA IS MADE UP IN THIS FILE
+import sys
 import numpy as np
 import random
 
@@ -28,3 +29,21 @@ def bayes():
                 else: # hourPercentage < 50%
                     WentOrNot[index].append(True)
         index += 1
+
+    index = 0
+
+    for key, value in MOCK_DATA.items():
+        print(key)
+        print(value)
+        for capacityPercentage in value:
+            index2 = 0
+            for hourPercentage in capacityPercentage:
+                print(WentOrNot[index][index2])
+                if WentOrNot[index][index2]:
+                    hourPercentage += 1
+                    value[index2] = hourPercentage
+                index2 += 1
+            index += 1
+        print(key)
+        print(value)
+        sys.exit(0)

@@ -5,7 +5,7 @@
 
 ## Algorithm 2 - Bayes Theorem
 *   The Theorem
-    *   `P(A|B) = P(B|A) * P(A) / P(B)`
+    *   `P(A|B) = P(A AND B) / P(B)`
     *   Where:
         *   `P(A|B)` is the conditional probability of `A` given `B`
         *   `P(B|A)` is the conditional probability of `B` given `A`
