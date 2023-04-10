@@ -20,4 +20,5 @@
     *   Collecting the data on local gyms in the area and using it in Bayes Theorem would satisfy the requirements of this algorithm and problem in this project.
 
 ## Algorithm 3 - Scheduling
-*   TODO : [FILL IN WHEN COMPLETING] 
+*  The problem:
+    *   Personal Training: Use a scheduling algorithm to optimize personal training schedules for both trainers and clients. The algorithm can take into account the availability of the trainer and the preferences of the client, as well as their fitness goals and current fitness level.
