@@ -50,5 +50,3 @@ def bayes():
         print(value)
         index+=1
         sys.exit()
-
-bayes()

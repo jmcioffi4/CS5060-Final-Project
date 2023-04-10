@@ -1,5 +1,6 @@
 import sys
 from BayesAlgorithm import bayes
+from SchedulingAlgorithm import scheduling
 
 try:
     while(True): # keep running till user exits
@@ -8,16 +9,17 @@ try:
             "1 = Optimal Stopping\n\n"
             "2 = Bayes Theorem\n\n"
             "3 = Scheduling\n\n"
-            "CTRL+C = Exit \n\n")
+            "CTRL+C` = Exit \n\n")
 
         if userInput.isdigit():
             userInput = int(userInput)
             if userInput == 1:
                 print("Optimal Stopping")
             elif userInput == 2:
-                bayes()
+                # bayes()
+                pass
             elif userInput == 3:
-                print("Scheduling")
+                scheduling()
             else:
                 print("Invalid input.\nTry Again.")
         else:
