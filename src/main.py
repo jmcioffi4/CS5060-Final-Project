@@ -1,6 +1,7 @@
 import sys
 from BayesAlgorithm import bayes
 from SchedulingAlgorithm import scheduling
+from OptimalStopping import optimal_stopping
 
 try:
     while(True): # keep running till user exits
@@ -14,7 +15,7 @@ try:
         if userInput.isdigit():
             userInput = int(userInput)
             if userInput == 1:
-                print("Optimal Stopping")
+                optimal_stopping()
             elif userInput == 2:
                 # bayes()
                 pass
