@@ -1,7 +1,10 @@
 # CS5060 Final Project (Implementation)
 
 ## Algorithm 1 - Optimal Stopping
-*   TODO : [FILL IN WHEN COMPLETING]
+*   The Problem:
+    *   When should the gym end deals on memberships given
+        * (A) When people stop going to the gym after starting their New Year's Resolutions?
+*   This data is found from survey information found online about how long people follow through on their New Year's Resolutions
 
 ## Algorithm 2 - Bayes Theorem
 *   The Theorem
