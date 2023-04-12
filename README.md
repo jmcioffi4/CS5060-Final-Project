@@ -8,17 +8,18 @@
 
 ## Algorithm 2 - Bayes Theorem
 *   The Theorem
-    *   `P(A|B) = P(A AND B) / P(B)`
+    *   `P(A|B) = P(B|A) * P(A) / P(B)`
     *   Where:
         *   `P(A|B)` is the conditional probability of `A` given `B`
         *   `P(B|A)` is the conditional probability of `B` given `A`
         *   `P(A)` is the prior probability of `A`
         *   `P(B)` is the prior probability of `B`
 *   The problem the algorithm will solve:
-    *   What is the probability of gym attendance (A) given
-        *   The time of day & the day of the week (what the capacity is at) (B)
-    *   Assume the following
-        *   if the gym is more than 50% busy then a gym goer will not go to the gym
+    *   What is the probability of attending the gym (A) given
+        *   The capacity at any hour on any day (B)
+    *   Assume the following:
+        *   if the gym is more than 80% busy, then a gym goer will not go to the gym.
+        *   if the gym is at 50%-80% capacity, then a gym goer will flip a coin to decide whether to go or not.
 *   This data can be easily pulled from google map's data
     *   Collecting the data on local gyms in the area and using it in Bayes Theorem would satisfy the requirements of this algorithm and problem in this project.
 

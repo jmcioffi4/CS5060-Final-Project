@@ -12,13 +12,13 @@ try:
             "3 = Scheduling\n\n"
             "CTRL+C` = Exit \n\n")
 
+        print('---------------------------')
         if userInput.isdigit():
             userInput = int(userInput)
             if userInput == 1:
                 optimal_stopping()
             elif userInput == 2:
-                # bayes()
-                pass
+                bayes()
             elif userInput == 3:
                 scheduling()
             else:

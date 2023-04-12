@@ -3,7 +3,7 @@ import sys
 import numpy as np
 import random
 
-def bayes():
+def run_bayes():
     WentOrNot = [[],[],[],[],[],[],[]]
     MOCK_DATA = { # how busy % wise the gym is for each hour in 24hrs
         'Sunday' : np.random.randint(1, 101, size=24),
@@ -21,32 +21,67 @@ def bayes():
     index = 0
     for key, value in MOCK_DATA.items():
         for hourPercentage in value:
-            if hourPercentage > 80:
+            if hourPercentage >= 80:
                 WentOrNot[index].append(False)
-            elif hourPercentage > 50 or hourPercentage < 80:
+            elif hourPercentage >= 50 and hourPercentage <= 80:
                 WentOrNot[index].append(random.randint(0, 1) == 1)
             else: # hourPercentage < 50%
                 WentOrNot[index].append(True)
         index += 1
 
-    index = 0
-    for key, value in MOCK_DATA.items():
-        index2 = 0
+    attend = 0
+    hours = 0
+    for day in WentOrNot:
+        for hour in day:
+            if hour:
+                attend+=1
+            hours+=1
 
-        print(key)
-        print(value)
+    P_a = attend/hours
+
+    attend = 0
+    hours = 0
+    for key, value in MOCK_DATA.items():
         for hour in value:
-            if WentOrNot[index][index2]:
-                hour += 1
-                value[index2] = hour
-            index2+=1
-        # for capacityPercentage in value:
-        #     print(WentOrNot[index][index2])
-        #     if WentOrNot[index][index2]:
-        #         hourPercentage += 1
-        #         value[index] = hourPercentage
-        #     index += 1
-        print(key)
-        print(value)
-        index+=1
-        sys.exit()
+            if hour >= 80:
+                attend+=1
+            hours+=1
+    
+    P_b = attend/hours
+
+    attend = 0
+    hours = 0
+    for key, value in MOCK_DATA.items():
+        for hour in value:
+            if hour >= 50:
+                attend+=1
+            hours+=1
+
+    P_b_a = attend/hours
+    P_a_b = P_b_a * P_a / P_b
+    # print(f"\tP(A) = {P_a} = {attend} / {hours}")
+    # print(f"\tP(B) = {P_b} = {attend} / {hours}")
+    # print(f"\tP(B|A) = {P_b_a/hours} = {attend} / {hours}")
+    # print(f"\tP(A|B) = {P_a_b} = {P_b_a} * {P_a} / {P_b}")
+
+    # index = 0
+    # for key, value in MOCK_DATA.items():
+    #     index2 = 0
+
+    #     for hour in value:
+    #         if WentOrNot[index][index2]:
+    #             hour += 1
+    #             value[index2] = hour
+    #         index2+=1
+    #     index+=1
+
+    return P_a, P_b, P_b_a, P_a_b
+
+def bayes():
+    for i in range (1,6):
+        print(f"Gym {i}:")
+        P_a, P_b, P_b_a, P_a_b = run_bayes()
+        print(f"\tP(A) = {P_a}")
+        print(f"\tP(B) = {P_b}")
+        print(f"\tP(B|A) = {P_b_a}")
+        print(f"\tP(A|B) = {P_a_b}")
