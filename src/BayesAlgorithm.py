@@ -1,5 +1,4 @@
 # ALL DATA IS MADE UP IN THIS FILE
-import sys
 import numpy as np
 import random
 
@@ -59,21 +58,6 @@ def run_bayes():
 
     P_b_a = attend/hours
     P_a_b = P_b_a * P_a / P_b
-    # print(f"\tP(A) = {P_a} = {attend} / {hours}")
-    # print(f"\tP(B) = {P_b} = {attend} / {hours}")
-    # print(f"\tP(B|A) = {P_b_a/hours} = {attend} / {hours}")
-    # print(f"\tP(A|B) = {P_a_b} = {P_b_a} * {P_a} / {P_b}")
-
-    # index = 0
-    # for key, value in MOCK_DATA.items():
-    #     index2 = 0
-
-    #     for hour in value:
-    #         if WentOrNot[index][index2]:
-    #             hour += 1
-    #             value[index2] = hour
-    #         index2+=1
-    #     index+=1
 
     return P_a, P_b, P_b_a, P_a_b
 
