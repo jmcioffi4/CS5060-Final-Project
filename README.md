@@ -1,9 +1,9 @@
 # CS5060 Final Project - User's Manual
 
 # Using the program
-*   run the program by typing
+*   run the program (found in the `src/` directory) by typing
     ```
-    python3 main.py
+    [src] % python3 main.py
     ```
 *   When the program is run, the UI will look like this:
     ```
