@@ -4,7 +4,7 @@ Main Problem
 *   *I tried to count the number of people who were thrown on a queue instead but couldn't get it to work for the life of me... sorry.*
 
 Output
-*   **File Output**: The output (named *gym_usage.md* and located in the directory the program is ran from) contains the gym's current known information at each individual hour of each day of the week. The outputs are detailing which person (identified by an ID number next to "person") is using what machine when. 
+*   **File Output**: The output (named *`gym_usage.md`* and located in the directory the program is ran from) contains the gym's current known information at each individual hour of each day of the week. The outputs are detailing which person (identified by an ID number next to "person") is using what machine when. 
 *   **Screen Output**: The output to the screen details the information about each day of the week, and how many people came to the gym on those days but couldn't get onto a machine. These are the people turned away. 
 *   Interesting to see that this data shows sometimes first come first serve can work within restraints (in this case time on a 24hr clock vs capacity) but other times it fails and lets a lot of things get away.
 
