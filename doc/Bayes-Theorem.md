@@ -17,3 +17,5 @@
             *   i.e. The prior probability of the gym's capacity
 *   The Data
     *   The data in this algorithm is randomly generated.
+*   Output
+    *   **TODO**
