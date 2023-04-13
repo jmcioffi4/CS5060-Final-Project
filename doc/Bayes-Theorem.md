@@ -15,6 +15,5 @@
             *   i.e. The prior probability of attending (will or will not).
         *   `P(B)` is the prior probability of `B`
             *   i.e. The prior probability of the gym's capacity
-*   This data can be easily pulled from google map's data
-    *   Collecting the data on local gyms in the area and using it in Bayes Theorem would satisfy the requirements of this algorithm and problem in this project.
+*   The data
     *   In the sake of time, we will generate mock data for the capacity of several gyms every hour of every day of the week and run Bayes Theorem on that data.
