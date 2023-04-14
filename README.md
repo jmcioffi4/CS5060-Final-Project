@@ -13,7 +13,7 @@
     1 = Optimal Stopping
     2 = Bayes Theorem
     3 = Scheduling
-    CTRL+C` = Exit 
+    CTRL+C = Exit 
 
     >> 
     ```
