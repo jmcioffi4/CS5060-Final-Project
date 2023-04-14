@@ -7,3 +7,6 @@
 
 ## The Output
 *   The graph produced from this year-long distribution shows, at its peak, the best day for a gym to end its deal on memberships after the New Year in order to make the most possible money.
+
+## NOTE ABOUT THE PROGRAM
+*   The program takes a few moments to run, to re-view the menu after selecting Option 1 the user needs to hit the exit button on the graph that appears.

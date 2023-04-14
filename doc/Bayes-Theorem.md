@@ -4,7 +4,7 @@
     *   We want to base this off of an individual viewpoint. We are running the program from the gym goers mindset. If the gym is more than 80% busy, then we ain't goin to the gym.
         *   If the gym is between 50%-80% busy, its a toss up. Do we really want to deal with this right now? Maybe the gym goer will just go later. Maybe they'll be productive and go now.
         *   If the gym is less than half busy, then there's clearly enough space the gym goer will go to the gym.
-*  The Theorem
+*  The Theorem (The Output)
     *   `P(A|B) = P(B|A) * P(A) / P(B)`
     *   Where:
         *   `P(A|B)` is the conditional probability of `A` given `B`
@@ -17,5 +17,3 @@
             *   i.e. The prior probability of the gym's capacity
 *   The Data
     *   The data in this algorithm is randomly generated.
-*   Output
-    *   **TODO**
